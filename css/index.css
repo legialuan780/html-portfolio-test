@@ -16,17 +16,21 @@ a {
     text-decoration: none;
 }
 
+
 .show{
     display: flex;
 }
 /* @media (max-width:1000px){
     .left-sidebar, .right-sidebar{
+
         display: none;
     }
     .container .center-sidebar{
         position: relative;
+
     }
 } */
+
 /* header *************************************************************************************************************/
 .header-wrap{
     width: 100%;
@@ -168,6 +172,7 @@ a {
 }
 .s-friend{
     left: 25px;
+
 }
 .s-video{
     left: 30px;
@@ -182,6 +187,7 @@ a {
     display: flex;
     transition: all 10s ;
 }
+
 /* DROP MENU *********************************************************************************************************/
 .card-menu-wrap{
     position: absolute;
@@ -314,6 +320,7 @@ a {
 .card-notice-header img, .mess-header img{
     width: 30px;
     cursor: pointer;
+
 }
 .card-notice-header img:hover, .mess-header img:hover{
     background-color: #e5e5ed97;
@@ -330,6 +337,7 @@ a {
     border-radius: 15px;
     cursor: pointer;
 }
+
 .notice-option .checked, .mess-option .checked{
     color: #076aff;
     background-color: #b9d7f373;
@@ -416,10 +424,12 @@ a {
 
 .icon-list img {
     margin-left: 5px;
+
 }
 .icon-list img:last-child{
     margin-left: 0px;
 }
+
 .messs-search{
     margin: 0 15px;
     padding: 10px ;
@@ -1119,6 +1129,7 @@ img{
     position: relative;
 }
 .like1{
+
     display: flex;
 }
 .like2{
@@ -1126,6 +1137,7 @@ img{
 }
 .hide-text{
     display: none;
+
 }
 .comment{
 

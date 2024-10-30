@@ -1,3 +1,5 @@
+
+
 const showProfile=document.querySelector('#showProfile')
 showProfile.addEventListener('click', function(){
     cardMess.style.display='none'
@@ -10,6 +12,8 @@ showProfile.addEventListener('click', function(){
         cardWrap.style.display="none"
     }
 })
+
+
 
 // mess
 const showMess =document.querySelector("#showMess")
@@ -25,7 +29,9 @@ showMess.addEventListener("click",function(){
     }
 })
 
+
 //notice
+
 const showNotice= document.querySelector('#notice')
 showNotice.addEventListener('click', function(){
     cardWrap.style.display='none'
@@ -50,6 +56,7 @@ showStatus.addEventListener('click', function(){
     document.querySelector('.create-status-wrap').style.display= 'none'
  })
 
+
 //LikeChange
 const iconLikeWraps =document.querySelectorAll('.icon-like-wrap')
 const hideTexts= document.querySelectorAll('.hide-text')
@@ -71,5 +78,6 @@ iconLikeWraps.forEach(function(iconLikeWrap,index) {
         }
     })
 });
+
 
 
