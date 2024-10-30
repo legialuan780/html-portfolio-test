@@ -40,7 +40,9 @@ input[type="text"], input[type="password"]{
     width: 90%;
     font-size: 17px;
 }
-.login, .register{
+
+#buttonLogin, .register{
+
     border: none;
     background-color: #1877f2;
     color: white;

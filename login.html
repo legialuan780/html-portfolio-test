@@ -4,16 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Facebook - Đăng nhập hoặc đăng ký</title>
+    <link rel="shortcut icon" href="/img/2023_Facebook_icon.svg" type="image/x-icon">
+
     <link rel="stylesheet" href="/css/loginStyle.css">
 </head>
 
 
 <body>
-    <form action="#">
-        <div class="input-box"><input type="text" placeholder="Email hoặc số điện thoại" required></div>
-        <div class="input-box"><input type="password" placeholder="Mật khẩu" required></div>
-        <a href="/index.html"  ><p class="login">Đăng nhập</p></a>
+
+    <form action="#" id="loginForm">
+        <div class="input-box"><input id="EmailOrPhone" type="text" placeholder="Email hoặc số điện thoại" required></div>
+        <div class="input-box"><input id="Pass" type="password" placeholder="Mật khẩu" required></div>
+        <button type="submit" id="buttonLogin"><p>Đăng nhập</p></button>
+
         <a href="#" ><p class="f-pws">Quên mật khẩu?</p></a>
         <hr>
         <a href="/register.html" ><p class="register">Tạo tài khoản mới</p></a>
@@ -28,5 +33,7 @@
     </div>
 
 </body>
+
+<script src="/js/login.js"></script>
 
 </html>

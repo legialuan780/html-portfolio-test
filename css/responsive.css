@@ -1,0 +1,20 @@
+@media (max-width:1000px){
+    .left-sidebar, .right-sidebar{
+        display: none;
+    }
+
+    .header-search input{
+        display: none;
+    }
+    .header-search {
+        width: 20px;
+        margin-right: 100px;
+    }
+    .header-right{
+        justify-content: flex-start;
+        margin: 0;
+    }
+    .container .center-sidebar{
+        position: relative;
+    }
+}
