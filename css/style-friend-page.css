@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.header-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 15px 20px; */
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0 5px 8px -9px rgba(0,0,0, 0.75);
+}
+
+.header-left{
+    width: 320px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.header-left img{
+    width: 40px;
+    padding: 7px 10px 7px 15px;
+}
+.header-search{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    background-color: #eff2f5;
+    padding: 10px;
+    border-radius: 200px;
+}
+.header-search input{
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    padding-left: 5px;
+}
+.header-search i {
+    font-size: 14px;
+    color: gray;
+    margin-left: 3px;
+}
+.header-mid{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    height: 100%;
+}
+.header-mid-option{
+    display: flex;
+    align-items: center;
+    padding: 16px 40px;
+}
+.header-mid-option:hover{
+    background-color: #eff2f5;
+    border-radius: 20px;
+}
+.header-mid-option i{
+    font-size:20px ;
+    color: gray;
+}
+#size22{
+    font-size: 25px;
+}
+#active{
+    border-bottom:3px solid #2e81f4;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius:2px ;
+}
+#active i{
+    color: #2e81f4;
+}
+.header-right{
+    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-left: 110px;
+}
+.avt{
+    margin-right: 10px;
+}
+.user-avt{
+    width: 35px;
+    border-radius: 50%;
+}
+.header-right .icon-backround{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #e5e5ed;
+    margin-left: 8px;
+}
+.header-right .icon-backround{
+    font-size: 18px;
+}
+.header-right .icon-backround:hover{
+    background-color: #b9b7b777;
+}
+/* Left***************************************************************************** */
+.container{
+}
+.left-sidebar{
+    width: 360px;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    /* background-color: #2e81f4; */
+    box-shadow: 0 2px 0 2px rgba(0, 0, 0, 0.244);
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.title .icon-backround{
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+}
+.title .icon-backround i{
+    font-size: 22px;
+}
+.list{
+}
+.menu-content{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 10px 10px;
+    margin:0 10px;
+}
+.menu-content:hover{
+    background-color: #e5e5ed;
+    border-radius: 10px;
+}
+.icon-backround{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #e5e5ed;
+}
+.menu-content .icon-backround img{
+    width: 36px;
+    border-radius: 50%;
+}
+.menu-content .icon-backround i{
+    font-size: 20px;
+}
+.menu-content span{
+    flex:1;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 17px;
+}
+#home .icon-backround{
+    background-color: #2e81f4;
+}
+#home i{color: white;}
+#home{
+    background-color: #e5e5ed;
+    border-radius: 10px;
+}
+#right-icon{ 
+    font-size: 20px;
+    margin-right: 7px;
+    color: gray;
+}
+
+.main-content {
+    position: relative;
+    top: 60px;
+    left: 360px;
+    width: 863px;
+    height: 100%;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+.title h3{
+    font-size: 20px;
+}
+.main-content .title a{
+    font-size: 17px;
+    color: #2e81f4;
+    padding: 7px;
+}
+.main-content .title a:hover{
+    background-color: #e5e5ed;
+}
+.people-wrap{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.people{
+    width: 200px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+}
+.people-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+}
+.people-info{
+    padding: 10px;
+    padding-top: 0;
+}
+.people-name, .people-friend, .add-button, .remove-button{margin: 6px 0;}
+.people-name p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.people-name p:hover{
+    text-decoration: underline;
+}
+.people-friend{
+    display: flex;
+    align-items: center;
+    height: 16px;
+    margin-bottom: 12px;
+}
+.people-friend p{
+    font-size: 15px;
+    color: gray;
+    margin-left: 5px;
+}
+.people-friend img{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    top: 1px;
+}
+
+.add-button,.remove-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    background-color: #ebf5ff;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+    font-size: 15px;
+    color: #2e81f4;
+    font-weight: 500;
+}
+.remove-button{
+    background-color: #e5e6eb;
+    color: black;
+}
+.add-button:hover{
+    background-color: #dce8f3;
+}
+.remove-button:hover{
+    background-color: #d2d3d7;
+}
+
+/* chat bubble *****************************************************************/
+.chat-bubble-wrap{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.write-box {
+    /* position: relative; */
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 0 2px #7b71710f;
+}
+.chat-bubble .write-box i{
+    font-size:20px;
+}
+.chat-bubble .online{
+    margin: 0 10px;
+}
+.chat-bubble .online img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 0;
+    box-shadow: 0px 0px 0 2px #7b71710f;
+}
+.online {
+    position: relative;
+}
+.chat-bubble .online::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: rgb(19 182 36);
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    border-radius: 50%;
+}
