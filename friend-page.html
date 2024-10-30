@@ -21,17 +21,75 @@
             </div>
         </div>
         <div class="header-mid">
-            <a class="header-mid-option" href="index.html"><i class="fas fa-home"></i></a>
-            <a id="active" class="header-mid-option" href="#"><i class="fa-solid fa-user-group"></i></a>
-            <a class="header-mid-option" href="#"><i id="size22" class="tv-icon material-symbols-outlined">live_tv</i></a>
-            <a class="header-mid-option" href="#"><i class="store-icon fa-solid fa-store"></i></a>
-            <a class="header-mid-option" href="#"><i class="group-icon fas fa-users"></i></a>
+            <a  class="header-mid-option" href="index.html"><i class="fas fa-home"></i><div class="sub-title s-home"><p>Trang chủ</p></div></a>
+            <a id="active" class="header-mid-option" href="friend-page.html"><i class="fa-solid fa-user-group"></i><div class="sub-title s-friend"><p>Bạn bè</p></div></a>
+            <a class="header-mid-option" href="#"><i id="size22" class="tv-icon material-symbols-outlined">live_tv</i><div class="sub-title s-video"><p>Video</p></div></a>
+            <a class="header-mid-option" href="#"><i class="store-icon fa-solid fa-store"></i><div class="sub-title s-market"><p>Marketplace</p></div></a>
+            <a class="header-mid-option" href="#"><i class="group-icon fas fa-users"></i><div class="sub-title s-group"><p>Nhóm</p></div></a>
         </div>
         <div class="header-right">
-            <a class="icon-backround" href="#"><i class="material-symbols-outlined">apps</i></a>
-            <a class="icon-backround" href="#"><i class="fab fa-facebook-messenger"></i></a>
-            <a class="icon-backround" href="#"><i class="fas fa-bell"></i></a>
-            <a class="icon-backround" href="#"><img class="user-avt" src="/img/avata.jpg" alt=""></a>
+            <a class="icon-backround" href="#"><i class="material-symbols-outlined">apps</i><div class="sub-title"><p>Menu</p></div></a>
+            <a class="icon-backround" href="#"><i class="fab fa-facebook-messenger"></i><div class="sub-title"><p>Messenger</p></div></a>
+            <!--  -->
+            
+            <a class="icon-backround" href="#"><i class="fas fa-bell"></i><div class="sub-title"><p>Thông báo</p></div></a>
+            <a class="icon-backround" href="#" onclick="openCard()">
+                <img class="user-avt" src="/img/avata.jpg" alt="" >
+                <div class="sub-title"><p>Tài khoản</p></div>
+            </a>
+            <!-- <img class="user-avt" src="/img/avata.jpg" alt="" onclick="openCard()"> -->
+            
+            <!-- DROP MENU -->
+                <div class="card-menu-wrap" id="cardWrap">
+                    <div class="card-menu">
+                        <div class="profile-menu">
+                            <div class="profile">
+                                <img src="/img/avata.jpg" alt="" class="user-avt">
+                            <span>Pham Khoa</span>
+                            </div>
+                            <hr>
+                            <p>Xem trang cá nhân</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="backround-color"><img src="/img/settings.png" alt=""></div>
+                            <span>Cài đặt & quyền riêng tư</span>
+                            <img src="/img/next.png" alt="" class="right">
+                        </div>
+                        <div class="menu-item">
+                            <div class="backround-color"><img src="/img/question.png" alt=""></div>
+                            <span>Trợ giúp & hỗ trợ</span>
+                            <img src="/img/next.png" alt="" class="right">
+                        </div>
+                        <div class="menu-item">
+                            <div class="backround-color"><img src="/img/night.png" alt=""></div>
+                            <span>Màn hình & trợ năng</span>
+                            <img src="/img/next.png" alt="" class="right">
+                        </div>
+                        <div class="menu-item">
+                            <div class="backround-color"><img src="/img/bubble-chat.png" alt=""></div>
+                            <span>Đóng góp ý kiến</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="backround-color"><img src="/img/log-out.png" alt=""></div>
+                            <span>Đăng xuất</span>
+                        </div>
+                        <div class="footer-infor">
+                            <span class="text">Quyền riêng tư</span>
+                            <span class="dot"><i class="fa-solid fa-circle"></i></span>
+                            <span class="text">Điều khoản</span>
+                            <span class="dot"><i class="fa-solid fa-circle"></i></span>
+                            <span class="text">Quảng cáo</span>
+                            <span class="dot"><i class="fa-solid fa-circle"></i></span>
+                            <span class="text">Lựa chọn quảng cáo</span>
+                            <span class="dot"><i class="fa-solid fa-circle"></i></span>
+                            <span class="text">Cookie</span>
+                            <span class="dot"><i class="fa-solid fa-circle"></i></span>
+                            <span class="seemore">Xem Thêm</span>
+                            <span class="dot"><i class="fa-solid fa-circle"></i></span>
+                            <span class="copyright">Meta &copy; 2024</span>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
     
@@ -47,7 +105,7 @@
                     <span>Trang chủ</span>
                 </div>
                 <a href="" class="menu-content">
-                    <div class="icon-backround"><img src="/img/friend-request.png" alt=""></div>
+                    <div class="icon-backround"><i class="fa-solid fa-user-minus"></i></div>
                     <span>Lời mời kết bạn</span>
                     <i id="right-icon" class="fa-solid fa-chevron-right"></i>
                 </a>
@@ -57,7 +115,7 @@
                     <i id="right-icon" class="fa-solid fa-chevron-right"></i>
                 </a>
                 <a href="" class="menu-content">
-                    <div class="icon-backround"><img src="/img/friend-list.png" alt=""></div>
+                    <div class="icon-backround"><i class="fa-solid fa-user-minus"></i></div>
                     <span>Tất cả bạn bè</span>
                     <i id="right-icon" class="fa-solid fa-chevron-right"></i>
                 </a>
@@ -66,7 +124,7 @@
                     <span>Sinh nhật</span>
                 </a>
                 <a href="" class="menu-content">
-                    <div class="icon-backround"><img src="/img/friend-list.png" alt=""></div>
+                    <div class="icon-backround"><i class="fa-solid fa-user-gear"></i></div>
                     <span>Danh sách bạn bè</span>
                     <i id="right-icon" class="fa-solid fa-chevron-right"></i>
                 </a>
@@ -79,22 +137,24 @@
             </div>
 
             <div class="people-wrap">
+
                 <div href="#" class="people">
-                    <a href="#" class="people-img"><img src="/img/avata.jpg" alt=""></a>
+                    <a href="#" class="people-img"><img src="/img/fr3.jpg" alt=""></a>
                     <div class="people-info">
-                        <a href="#" class="people-name"><p>Khoa Pham</p></a>
+                        <a href="#" class="people-name"><p>Khôi Ngô Tuấn Tú</p></a>
                         <div class="people-friend">
                             <a href="#"><img src="/img/avata.jpg" alt=""></a>
-                            <a href="#"><p>1 bạn chung</p></a>
+                            <a href="#"><p>13 bạn chung</p></a>
                         </div>
                         <a href="#" class="add-button"><p>Thêm bạn bè</p></a>
                         <a href="#" class="remove-button"><p>Gỡ</p></a>
                     </div>
                 </div>
+
                 <div href="#" class="people">
-                    <a href="#" class="people-img"><img src="/img/avata.jpg" alt=""></a>
+                    <a href="#" class="people-img"><img src="/img/fr9.jpg" alt=""></a>
                     <div class="people-info">
-                        <a href="#" class="people-name"><p>Khoa Pham</p></a>
+                        <a href="#" class="people-name"><p>Mỹ Vân Đỗ</p></a>
                         <div class="people-friend">
                             <!-- <a href="#"><img src="/img/avata.jpg" alt=""></a>
                             <a href="#"><p>1 bạn chung</p></a> -->
@@ -102,67 +162,78 @@
                         <a href="#" class="add-button"><p>Thêm bạn bè</p></a>
                         <a href="#" class="remove-button"><p>Gỡ</p></a>
                     </div>
-                </div><div href="#" class="people">
-                    <a href="#" class="people-img"><img src="/img/avata.jpg" alt=""></a>
+                </div>
+                
+                <div href="#" class="people">
+                    <a href="#" class="people-img"><img src="/img/fr1.jpg" alt=""></a>
                     <div class="people-info">
-                        <a href="#" class="people-name"><p>Khoa Pham</p></a>
+                        <a href="#" class="people-name"><p>Trung Kiên</p></a>
                         <div class="people-friend">
-                            <a href="#"><img src="/img/avata.jpg" alt=""></a>
+                            <a href="#"><img src="/img/avatarluan.jpg" alt=""></a>
+                            <a href="#"><p>3 bạn chung</p></a>
+                        </div>
+                        <a href="#" class="add-button"><p>Thêm bạn bè</p></a>
+                        <a href="#" class="remove-button"><p>Gỡ</p></a>
+                    </div>
+                </div>
+                
+                <div href="#" class="people">
+                    <a href="#" class="people-img"><img src="/img/fr10.jpg" alt=""></a>
+                    <div class="people-info">
+                        <a href="#" class="people-name"><p>Lương Mỹ Kiều</p></a>
+                        <div class="people-friend">
+                        
+                        </div>
+                        <a href="#" class="add-button"><p>Thêm bạn bè</p></a>
+                        <a href="#" class="remove-button"><p>Gỡ</p></a>
+                    </div>
+                </div>
+                
+                <div href="#" class="people">
+                    <a href="#" class="people-img"><img src="/img/fr5.jpg" alt=""></a>
+                    <div class="people-info">
+                        <a href="#" class="people-name"><p>Shoto Haru</p></a>
+                        <div class="people-friend">
+                            <a href="#"><img src="/img/avatarkhoi.jpg" alt=""></a>
                             <a href="#"><p>1 bạn chung</p></a>
                         </div>
                         <a href="#" class="add-button"><p>Thêm bạn bè</p></a>
                         <a href="#" class="remove-button"><p>Gỡ</p></a>
                     </div>
-                </div><div href="#" class="people">
-                    <a href="#" class="people-img"><img src="/img/avata.jpg" alt=""></a>
+                </div>
+                
+                <div href="#" class="people">
+                    <a href="#" class="people-img"><img src="/img/fr6.jpg" alt=""></a>
                     <div class="people-info">
-                        <a href="#" class="people-name"><p>Khoa Pham</p></a>
+                        <a href="#" class="people-name"><p>Dũng DevC</p></a>
                         <div class="people-friend">
-                            <a href="#"><img src="/img/avata.jpg" alt=""></a>
-                            <a href="#"><p>1 bạn chung</p></a>
+                            <a href="#"><img src="/img/tiendat.jpg" alt=""></a>
+                            <a href="#"><p>100 bạn chung</p></a>
                         </div>
                         <a href="#" class="add-button"><p>Thêm bạn bè</p></a>
                         <a href="#" class="remove-button"><p>Gỡ</p></a>
                     </div>
-                </div><div href="#" class="people">
-                    <a href="#" class="people-img"><img src="/img/avata.jpg" alt=""></a>
+                </div>
+                
+                <div href="#" class="people">
+                    <a href="#" class="people-img"><img src="/img/fr7.jpg" alt=""></a>
                     <div class="people-info">
-                        <a href="#" class="people-name"><p>Khoa Pham</p></a>
+                        <a href="#" class="people-name"><p>Quoc Vinh</p></a>
                         <div class="people-friend">
-                            <a href="#"><img src="/img/avata.jpg" alt=""></a>
-                            <a href="#"><p>1 bạn chung</p></a>
+                            <a href="#"><img src="/img/khoidai.jpg" alt=""></a>
+                            <a href="#"><p>20 bạn chung</p></a>
                         </div>
                         <a href="#" class="add-button"><p>Thêm bạn bè</p></a>
                         <a href="#" class="remove-button"><p>Gỡ</p></a>
                     </div>
-                </div><div href="#" class="people">
-                    <a href="#" class="people-img"><img src="/img/avata.jpg" alt=""></a>
+                </div>
+                
+                <div href="#" class="people">
+                    <a href="#" class="people-img"><img src="/img/fr8.jpg" alt=""></a>
                     <div class="people-info">
-                        <a href="#" class="people-name"><p>Khoa Pham</p></a>
+                        <a href="#" class="people-name"><p>Billie Eilish</p></a>
                         <div class="people-friend">
-                            <a href="#"><img src="/img/avata.jpg" alt=""></a>
-                            <a href="#"><p>1 bạn chung</p></a>
-                        </div>
-                        <a href="#" class="add-button"><p>Thêm bạn bè</p></a>
-                        <a href="#" class="remove-button"><p>Gỡ</p></a>
-                    </div>
-                </div><div href="#" class="people">
-                    <a href="#" class="people-img"><img src="/img/avata.jpg" alt=""></a>
-                    <div class="people-info">
-                        <a href="#" class="people-name"><p>Khoa Pham</p></a>
-                        <div class="people-friend">
-                            <a href="#"><img src="/img/avata.jpg" alt=""></a>
-                            <a href="#"><p>1 bạn chung</p></a>
-                        </div>
-                        <a href="#" class="add-button"><p>Thêm bạn bè</p></a>
-                        <a href="#" class="remove-button"><p>Gỡ</p></a>
-                    </div>
-                </div><div href="#" class="people">
-                    <a href="#" class="people-img"><img src="/img/avata.jpg" alt=""></a>
-                    <div class="people-info">
-                        <a href="#" class="people-name"><p>Khoa Pham</p></a>
-                        <div class="people-friend">
-                            <a href="#"><img src="/img/avata.jpg" alt=""></a>
+                            <a href="#"><img src="/img/ez.jpg" alt=""></a>
                             <a href="#"><p>1 bạn chung</p></a>
                         </div>
                         <a href="#" class="add-button"><p>Thêm bạn bè</p></a>
@@ -191,5 +262,6 @@
             
         </div>
     </div>
+    <script src="/js/index.js"></script>
 </body>
 </html>
